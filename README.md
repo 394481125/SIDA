@@ -8,8 +8,6 @@ The dataset needs to be divided into two folders for training and testing. The t
 
 `code/train.py` is the implementation of our method on the Prostate, Fundus, and BUSI dataset.
 
-`code/train_mnms.py` is the implementation of our method on the M&Ms dataset.
-
 Modify the paths in the code.
 
 ```python
@@ -17,8 +15,6 @@ if args.dataset == 'fundus':
     train_data_path='../../data/Fundus' # the folder of fundus dataset
 elif args.dataset == 'prostate':
     train_data_path="../../data/ProstateSlice" # the folder of prostate dataset
-elif args.dataset == 'MNMS':
-    train_data_path="../../data/mnms" # the folder of mnms dataset
 ```
 
 then simply run:
