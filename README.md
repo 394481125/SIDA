@@ -1,4 +1,4 @@
-# UST-RUN
+# SIDA
 
 ### 1. Dataset Construction
 
@@ -17,8 +17,6 @@ if args.dataset == 'fundus':
     train_data_path='../../data/Fundus' # the folder of fundus dataset
 elif args.dataset == 'prostate':
     train_data_path="../../data/ProstateSlice" # the folder of prostate dataset
-elif args.dataset == 'BUSI':
-    train_data_path="../../data/Dataset_BUSI_with_GT" # the folder of BUSI dataset
 elif args.dataset == 'MNMS':
     train_data_path="../../data/mnms" # the folder of mnms dataset
 ```
@@ -26,7 +24,7 @@ elif args.dataset == 'MNMS':
 then simply run:
 
 ```python
-python work.py --dataset ... --lb_domain ... --lb_num ... --save_name ... --gpu 0
+python sh_train.py --dataset ... --lb_domain ... --lb_num ... --save_name ... --gpu 0
 ```
 
 ### 3. Test
@@ -43,6 +41,6 @@ python test.py --dataset ... --save_name ... --gpu 0
 
 ### 4. Acknowledgement
 
-This project is based on the code from the [SSL4MIS](https://github.com/HiLab-git/SSL4MIS) project.
+This project is based on the code from the [SSL4MIS](https://github.com/HiLab-git/SSL4MIS) and [UST-RUN](https://github.com/MQinghe/UST-RUN) project.
 
 Thanks a lot for their great works.
